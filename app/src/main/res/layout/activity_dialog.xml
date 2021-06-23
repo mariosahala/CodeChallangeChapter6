@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:background="#DDE9F6"
+    android:paddingBottom="8dp"
+    tools:context=".DialogActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vSeri"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
+
+    <View
+        android:id="@+id/vMenang"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
+
+    <TextView
+        android:id="@+id/tvScoreMenang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/vMenang"
+        app:layout_constraintEnd_toEndOf="@id/vMenang"
+        app:layout_constraintStart_toStartOf="@id/vMenang"
+        app:layout_constraintTop_toTopOf="@id/vMenang"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <View
+        android:id="@+id/vKalah"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
+
+    <TextView
+        android:id="@+id/tvScoreKalah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/vKalah"
+        app:layout_constraintEnd_toEndOf="@id/vKalah"
+        app:layout_constraintStart_toStartOf="@id/vKalah"
+        app:layout_constraintTop_toTopOf="@id/vKalah"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <ImageView
+        android:id="@+id/ivScore"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/score1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMenang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menang"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/vMenang"
+        app:layout_constraintEnd_toEndOf="@id/tvScoreMenang"
+        app:layout_constraintStart_toStartOf="@id/tvScoreMenang" />
+
+    <TextView
+        android:id="@+id/tvSeri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seri"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/vSeri"
+        app:layout_constraintEnd_toEndOf="@id/tvScoreSeri"
+        app:layout_constraintStart_toStartOf="@id/tvScoreSeri" />
+
+    <TextView
+        android:id="@+id/tvScoreSeri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/vSeri"
+        app:layout_constraintEnd_toEndOf="@id/vSeri"
+        app:layout_constraintStart_toStartOf="@id/vSeri"
+        app:layout_constraintTop_toTopOf="@id/vSeri"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <TextView
+        android:id="@+id/tvKalah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalah"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/vKalah"
+        app:layout_constraintEnd_toEndOf="@id/tvScoreKalah"
+        app:layout_constraintStart_toStartOf="@+id/tvScoreKalah" />
+
+    <ImageView
+        android:id="@+id/ivHome"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ivReset"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_baseline_refresh_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivHome"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/comic_sans_ms"
+        android:gravity="center_horizontal"
+        android:text="ERWIN \n MENANG!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintVertical_bias="0.163" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

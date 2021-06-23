@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDE9F6"
+    android:padding="16dp"
+    tools:context=".ui.menu.MenuActivity">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_splash_screen1"
+        app:layout_constraintBottom_toTopOf="@id/btnPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60sp"
+        android:layout_marginEnd="60sp"
+        android:background="@drawable/background_button"
+        android:padding="8dp"
+        android:text="Play"
+        android:textColor="@color/black"
+        android:textFontWeight="@integer/config_navAnimTime"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60sp"
+        android:background="@drawable/background_button"
+        android:backgroundTint="#2196F3"
+        android:padding="8dp"
+        android:text="MULTIplayer"
+        android:textColor="@color/black"
+        android:textFontWeight="@integer/config_navAnimTime"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlay" />
+
+    <Button
+        android:id="@+id/btnFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60sp"
+        android:background="@drawable/background_button"
+        android:backgroundTint="#FF9800"
+        android:padding="8dp"
+        android:text="Friends"
+        android:textColor="@color/black"
+        android:textFontWeight="@integer/config_navAnimTime"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMulti" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60sp"
+        android:background="@drawable/background_button"
+        android:backgroundTint="#4CAF50"
+        android:padding="8dp"
+        android:text="Profile"
+        android:textColor="@color/black"
+        android:textFontWeight="@integer/config_navAnimTime"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFriends" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60sp"
+        android:background="@drawable/background_button"
+        android:backgroundTint="#303030"
+        android:padding="8dp"
+        android:text="Exit"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/config_navAnimTime"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnProfile" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
